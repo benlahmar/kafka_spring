@@ -1,7 +1,9 @@
 spring:
   kafka:
     bootstrap-servers: localhost:9092
-    producer:      value-serializer: com.example.demo.converts.OrderSerializer       
+    producer:      value-serializer: com.example.demo.converts.OrderSerializer
+    consumer:
+      value-deserializer: com.example.demo.converts.StockDtoDeserialize       
 server:  port: 8080
     
     
